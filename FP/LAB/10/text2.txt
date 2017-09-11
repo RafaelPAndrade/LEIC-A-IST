@@ -1,0 +1,2 @@
+Este texto é para ser concatenado a
+text.txt

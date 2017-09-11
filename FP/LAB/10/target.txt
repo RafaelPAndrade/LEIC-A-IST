@@ -1,0 +1,10 @@
+minusculas
+so
+contando
+vogais
+16
+e
+linhas
+10
+tem\n \n 
+Isto

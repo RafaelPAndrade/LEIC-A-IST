@@ -1,0 +1,146 @@
+
+1. Considere o seguinte vector v = <6, 3, 4, 2, 5, 1>. Indique o conteudo de v no final de cada passo dos algoritmos insertion sort e selection sort.
+Resposta:
+
+	|Selection Sort		|Insertion Sort
+1	|<1, 3, 4, 2, 5, 6>	|<3, 6, 4, 2, 5, 1>
+2	|<1, 2, 4, 3, 5, 6>	|<3, 4, 6, 2, 5, 1>
+3	|<1, 2, 3, 4, 5, 6>	|<2, 3, 4, 6, 5, 1>
+4	|<1, 2, 3, 4, 5, 6>	|<2, 3, 4, 5, 6, 1>
+5	|<1, 2, 3, 4, 5, 6>	|<1, 2, 3, 4, 5, 6>
+
+
+2.Considere o seguinte vector v = <12, 2, 18, 15, 16, -1, 35, 30, 15>. Indique as razoes porque e que o vector <-1, 2, 12, 15, 18, 15, 16, 30, 35> nao pode corresponder ao conteudo de v num passo intermedio da aplicacao dos algoritmos insertion sort, selection sort ou merge sort.
+
+Resposta:
+-Insertion Sort:
+	-Se fosse um Insertion Sort da esquerda para a direita, teriamos parado na 4 iteracao (5 elementos ja ordenados na esquerda, e o v[5]<v[4]). Mas assim, o -1 nao poderia estar ja na posicao v[0], pois estava originalmente na posicao v[5]. E o 16 nao teria movido para uma posicao maior. (de v[5] para v[6])
+	-Se fosse um Insertion Sort da direita para a esquerda, teriamos de ter parado na iteracao n. 3 (na qual o 35 iria para a ultima posicao do vetor). Nao e possivel que o 12 tenha sido afetado, nem o 18.
+	-Se fosse um Selection Sort da esquerda para a direita, teriam havido pelo menos 3 iteracoes (3 primeiros elementos fora da posicao original mas organizados.) Ora, o algoritmo nao mudaria a posicao dos elementos 30 e 35.
+	-Se fosse um Selection Sort da esquerda para a direita, teria havido, no maximo, 2 iteracoes (2 ultimos elementos organizados) ou 1 no minimo (ultimo elemento fora de sitio). Nao seria possivel as modificacoes existentes no inicio do vetor.
+	-Se fosse um Merge Sort recursivo ("puro"), teriamos de estar a olhar o ultimo passo, pois -1 faria parte de um grupo diferente de 2. Ora, este nao pode ser o ultimo passo, pois o vetor esta desorganizado.
+	
+
+3.Considere a aplicacao do algoritmo bubblesort ao vector <20, 11, 16, 9, 12, 14, 17, 19, 13, 15>. Supondo que o algoritmo percorre o vector da esquerda para a direita em cada iteracao, qual o conteudo do vector apos as duas primeiras iteracoes do algoritmo bubblesort ?
+	
+Resposta:
+0	<20, 11, 16, 9, 12, 14, 17, 19, 13, 15>
+1	<11, 16, 9, 12, 14, 17, 19, 13, 15, 20>
+2	<11, 9, 12, 14, 16, 17, 13, 15, 19, 20> <-----Resposta final
+
+
+4.Diga quais dos seguintes vectores corresponde a um amontoado (heap)? 
+a. <50, 25, 30, 27, 24, 21, 28> 
+b. <50, 30, 25, 27, 24, 28, 21> 
+c. <60, 50, 9, 40, 41, 10, 8> 
+d. <40, 15, 18, 13, 11, 14, 16> 
+e.  <60, 30, 80, 10, 35, 70, 40>
+
+Resposta:(d). 
+Justificacao:
+a)27>25
+b)28>25
+c)10>9
+d)---
+e)35>30
+
+5.A primeira operacao do algoritmo heapsort e transformar o vector num amontoado. Considere que o vector de entrada do algoritmo e:
+<20, 11, 16, 9, 12, 14, 17, 19, 13, 15>.
+
+	5.1.Indique o conteudo do vector apos o passo de transformacao num amontoado. 
+	Resposta:
+	<20, 19, 17, 13, 15, 14, 16, 9, 11,	12>.
+
+	5.2.Indique ainda o conteudo do vector apos os dois maiores elementos terem sido ordenados (colocados na sua posicao final), durante a operacao de ordenacao (heapsort).
+	Resposta:
+	-Antes de refazer a arvore:
+	<11, 15, 17, 13, 12, 14, 16, 9, 19,	20>.
+	-Depois de refazer a arvore:
+	<17, 15, 16, 13, 12, 14, 11, 9, 19,	20>.
+	
+	
+6. Qual o conteudo do seguinte vector <25, 19, 23, 15, 18, 16, 21, 12> depois de os dois primeiros elementos (i.e. os dois maiores) terem sido ordenados, utilizando o algoritmo de ordenacao heapsort?
+
+Resposta:
+O vetor dado ja e um amontoado.
+
+0	<25, 19, 23, 15, 18, 16, 21, 12>
+1	<12, 19, 23, 15, 18, 16, 21, 25>
+1	<23, 19, 21, 15, 18, 16, 12, 25> <- Arvore
+2	<12, 19, 21, 15, 18, 16, 23, 25>
+2	<21, 19, 16, 15, 18, 12, 23, 25> <= Arvore Final
+
+
+7. Considere a implementacao classica da funcao int partition (Item v[], int l, int r) usada no algoritmo quicksort tal como apresentada nas aulas teoricas. Esta funcao recebe o vector v e as posicoes l e r que definem, respectivamente, os indices limite esquerdo e direito do vector a considerar na funcao. Suponha que o procedimento partition e invocado com os seguintes argumentos: v = <13, 6, 5, 14, 12, 4, 16, 18, 7, 9, 10>, l = 0, r = 10.  Considerando a posicao a[r] como pivot, indique qual o conteeudo do vector v apos a execucao da funcao partition.
+
+Resposta:
+
+<9, 6, 5, 7, 4, 10, 16, 18, 14, 13, 12>
+
+
+8. Considere o exercicio anterior, mas onde os argumentos da funcao partition sao os seguintes: v =<20, 11, 16, 9, 12, 14, 17, 19, 13, 15> , l = 0 , r = 9. Qual o conteudo do vector v apos a execucao do procedimento partition?
+
+Resposta:
+<13, 11, 14, 9, 12, 15, 17, 19, 20, 16>
+
+
+9. (Radix LSD) Considere a aplicacao do algoritmo radix sort LSD, em que cada passo os elementos sao ordenados considerando um digito, ao seguinte vector:
+
+<48372, 62309, 83861, 91874, 18913, 33829, 47812, 95954, 52377, 22394, 56108, 60991>
+
+Qual e o terceiro numero da sequencia, apos o algoritmo ter considerado tres digitos?
+
+
+Resposta:
+48 372, <-3o
+62 309, <-2o
+83 861, 
+91 874, 
+18 913, 
+33 829, 
+47 812, 
+95 954, 
+52 377, 
+22 394, 
+56 108,  <-1o 
+60 991>
+
+
+10. (Radix MSD) Considere o seguinte vector de numeros inteiros sem sinal de 6 bits:
+
+<32, 2, 34, 9, 6, 1, 20, 18, 10>. Qual o conteudo do vector apos os primeiros dois passos do algoritmo de ordenacao radix sort MSD, em que em cada passo os elementos sao ordenados considerando 2 bits (ou seja, byte = 2 bits)?
+
+Nota: considere que o algoritmo e baseado numa versao estavel do algoritmo counting sort. O algoritmo deve apenas processar os 6 bits menos significativos de cada numero, independentemente dos numeros poderem ser guardados em palavras com maior numero de bits.
+
+Resposta:
+	-Passagem para binario
+	<10 00 00, 00 00 10, 10 00 10, 00 10 01, 00 01 10, 00 00 01, 10 01 00, 01 00 10, 00 10 10>
+	
+	-Ordenacao 1o passo
+	00 00 10
+	00 10 01
+	00 01 10
+	00 00 01
+	00 10 10
+	
+	01 00 10
+	
+	10 00 00
+	10 00 10
+	10 01 00
+
+	-Ordenacao 2o passo
+	00 00 10
+	00 00 01
+
+	00 01 10 <-- Resposta final: 6
+
+	00 10 01
+	00 10 10
+	
+	01 00 10
+	
+	10 00 00
+	10 00 10
+	
+	10 01 00

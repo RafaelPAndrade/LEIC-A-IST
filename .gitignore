@@ -1,0 +1,24 @@
+# Do not include:
+
+#C [IAED]
+#	-Object files
+#	-Precompiled Headers
+#	-Executables
+
+*.o
+*.gch
+*.out
+
+#Python [FP]
+#	-pycache
+
+__pycache__/
+*.py[cod]
+
+#16 Bit Assembly [IAC]
+#  -compiled binaries
+#  -listings
+
+*.exe
+*.lis
+

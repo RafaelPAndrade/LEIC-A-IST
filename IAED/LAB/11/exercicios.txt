@@ -1,0 +1,88 @@
+1.
+R.: 33, 3
+
+2.
+17 -	[2]
+7  -	[1]
+28 -	[1] <- Conflito
+12 -	[0]
+0  -	[0] <- Conflito
+25 -	[1] <- Conflito
+37 -	[1] <- Conflito
+24 -	[0] <- Conflito
+
+N. de Conflitos: 5
+
+
+
+3. Mod 13
+Sequencia dos valores: 17, 7, 28, 12, 0, 25, 37, 11, 24
+Tabela, no final
+ _____
+|_0___|0
+|_25__|1 (25=13+12, ocupado)
+|_28__|2
+|_11__|3 (11=11,    ocupado)
+|_17__|4
+|_24__|5 (24=13+11, ocupado)
+|_____|6
+|_7___|7
+|_____|8
+|_____|9
+|_____|10
+|_37__|11
+|_12__|12
+
+R.: O elemento 24 foi inserido na posicao 5.
+
+4. Mod 10
+Sequencia dos valores: 10, 18, 5, 25, 46, 101, 39, 17
+Tabela, no final
+ _____
+|_10__|0
+|_101_|1
+|_17__|2 (17 = 10 + 7, ocupado)
+|_____|3
+|_____|4
+|_5___|5
+|_25__|6 (25 = 2*10+5, ocupado)
+|_46__|7 (46 = 4*10+6, ocupado)
+|_18__|8
+|_39__|9
+
+R.: O elemento 17 foi inserido na posicao 2.
+
+
+5. Mod 10; 1+3k(double hashing)
+Sequencia dos valores: 10, 12, 7, 9, 3, 11, 2
+Tabela, no final
+ _____
+|_10__|0
+|_11__|1
+|_12__|2
+|_3___|3
+|_____|4
+|_____|5
+|_2___|6 (duas voltas)
+|_7___|7
+|_____|8
+|_9___|9
+
+R.: O elemento 2 foi inserido na posicao 6.
+
+6. (Faz-se depois)
+
+7. d)
+
+8. 6,3,8,7,10,15,11,50,16,9
+Rotacoes:
+RotLR(10); RotR(8); RotL(10); RotRL(10).
+
+
+
+9. 9,7,3,6,8,15,11,10,50
+ou
+9,7,3,6,8,11,10,50,15
+
+
+
