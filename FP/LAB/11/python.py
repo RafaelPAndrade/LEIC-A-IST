@@ -235,16 +235,12 @@ class mem_A:
 		if (m,n) not in self.values:
 			if m == 0:
 				self.values[(m,n)]=n+1
-				#return n + 1
 			elif m > 0 and n == 0:
-				self.values[(m,n)]=self.val(m-1,n)
-				#return A(m-1, 1)
+				self.values[(m,n)]=self.val(m-1,1)
 			else:
-				A_n_dec= self.val(m, n-1)
-				self.values[(m,n)]=self.val(m-1, A_n_dec)
-				#return A(m-1, A(m, n-1))
+				self.values[(m,n)]=self.val(m-1, self.val(m, n-1))
 
-			return self.values[(m,n)]
+		return self.values[(m,n)]
 
 
 
