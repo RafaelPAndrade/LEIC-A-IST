@@ -1,6 +1,6 @@
 # Do not include:
 
-#C [IAED]
+#C/C++ [IAED, SO, PO]
 #	-Object files
 #	-Precompiled Headers
 #	-Executables
@@ -27,3 +27,9 @@ __pycache__/
 *.class
 *.jar
 !po-uuilib.jar
+
+
+#heatSim [SO]
+
+heatSim
+
