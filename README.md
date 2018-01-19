@@ -4,15 +4,26 @@
 
 ## Table of Contents: ##
 
-- 1st semester:
+- 1st year:
 
-  * FP (Programming Fundamentals)
-  * IAC (Introduction to Computer Architeture)
+  + 1st semester:
 
-- 2nd semester
+      * FP (Programming Fundamentals)
+      * IAC (Introduction to Computer Architeture)
 
-  * LP (Logic for Programming)
-  * IAED (Introduction to Algorithms and Data Structures)
+  + 2nd semester
+
+      * LP (Logic for Programming)
+      * IAED (Introduction to Algorithms and Data Structures)
+
+- 2nd year:
+
+  + 1st semester:
+
+      * PO (Programming with Objects)
+      * SO (Operating Systems)
+
+
 
 #### Attention: The majority of the content here is in portuguese or has portuguese documentation. If a translation is needed, feel free to contact me / submit an issue. ####
 
