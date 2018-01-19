@@ -22,3 +22,8 @@ __pycache__/
 *.exe
 *.lis
 
+#Java [PO]
+
+*.class
+*.jar
+!po-uuilib.jar
