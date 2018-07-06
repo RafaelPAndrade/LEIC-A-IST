@@ -23,6 +23,11 @@
       * PO (Programming with Objects)
       * SO (Operating Systems)
 
+  + 2nd semester:
+
+      * ASA (Analysis and Synthesis of Algorithms)
+      * IPM (Person-Machine Interfaces)
+
 
 
 #### Attention: The majority of the content here is in portuguese or has portuguese documentation. If a translation is needed, feel free to contact me / submit an issue. ####
@@ -61,7 +66,7 @@
 
 	-	Number of digits employed = Number of digits of the
 		highest number in use. E.g.:
-		
+
 		-	3   folder  -> 1/, 2/, 3/                   (see IAC/LAB)
 		-	12  folders -> 01/, 02/, ..., 23/          (see IAED/LAB)
 		-	101 folders -> 001, 002/, ..., 023/, ..., 101/
