@@ -1,6 +1,6 @@
 [submodule "ASA/Proj1"]
 	path = ASA/Proj1
-	url = ssh://git@gitlab.com/RafaelPAndrade/ASA-1
+	url = https://gitlab.com/RafaelPAndrade/ASA-1
 [submodule "ASA/Proj2"]
 	path = ASA/Proj2
-	url = ssh://git@gitlab.com/RafaelPAndrade/ASA-2
+	url = https://gitlab.com/RafaelPAndrade/ASA-2
