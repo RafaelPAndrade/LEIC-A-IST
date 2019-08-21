@@ -4,3 +4,9 @@
 [submodule "ASA/Proj2"]
 	path = ASA/Proj2
 	url = https://gitlab.com/RafaelPAndrade/ASA-2
+[submodule "IA/Proj1"]
+	path = IA/Proj1
+	url = https://gitlab.com/RafaelPAndrade/IA-1
+[submodule "IA/Proj2"]
+	path = IA/Proj2
+	url = https://gitlab.com/RafaelPAndrade/IA-2
